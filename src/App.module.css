@@ -1,4 +1,4 @@
-.app-wrapper {
+.appWrapper {
     display: grid;
     width: 1500px;
     margin: 0 auto;
@@ -8,20 +8,8 @@
     'h h'
     'n c';
 }
-.header {
-    grid-area: h;
-    background-color: lightblue;
-}
-.header img {
-    width: 50px;
-}
 
-.nav {
-    grid-area: n;
-    background-color: hotpink;
-}
-
-.content {
+.appWrapperContent {
     grid-area: c;
     background-color: lightcoral;
 }
