@@ -41,6 +41,7 @@ export let addPost = () => {
     state.profilePage.newPostText = '';
     rerenderEntireTree(state);
     console.log('idk')
+    console.log('suka second')
 }
 
 export let updateNewPostText = (newText) => {
