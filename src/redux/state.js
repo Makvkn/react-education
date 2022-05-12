@@ -46,10 +46,11 @@ export let addPost = () => {
 export let updateNewPostText = (newText) => {
     state.profilePage.newPostText = newText
     rerenderEntireTree(state);
+    console.log('warn')
 }
 
 export const subscribe = (observer) => {
-    rerenderEntireTree = observer;   //observer паттерн
+    rerenderEntireTree = observer;   //observer паттерн and bla bla bvla
 }
 
 export default state;
