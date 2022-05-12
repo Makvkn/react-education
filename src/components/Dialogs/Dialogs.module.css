@@ -3,8 +3,16 @@
     grid-template-columns: 2fr 10fr;
 }
 
+.dialogsItems {
+    text-decoration: none;
+}
+
 .dialog {
     padding: 10px;
+}
+
+.dialog a{
+    text-decoration: none;
 }
 
 .messages {
@@ -13,4 +21,17 @@ padding: 10px;
 
 .message {
     padding: 10px;
+}
+
+
+.sendMess {
+    display: flex;
+}
+
+.textsend {
+    margin-left: 10px;
+}
+
+.sendButton {
+    margin-left: 20px;
 }

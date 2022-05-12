@@ -2,3 +2,10 @@
     grid-area: c;
     background-color: lightcoral;
 }
+
+.postBlock {
+    padding: 20px;
+}
+.posts {
+    padding: 20px;
+}
