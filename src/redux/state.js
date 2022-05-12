@@ -40,17 +40,16 @@ export let addPost = () => {
     state.profilePage.posts.push(newPost);
     state.profilePage.newPostText = '';
     rerenderEntireTree(state);
-
+    console.log('idk')
 }
 
 export let updateNewPostText = (newText) => {
     state.profilePage.newPostText = newText
     rerenderEntireTree(state);
-    console.log('warn')
 }
 
 export const subscribe = (observer) => {
-    rerenderEntireTree = observer;   //observer паттерн and now!!!
+    rerenderEntireTree = observer;   //observer паттерн
 }
 
 export default state;
