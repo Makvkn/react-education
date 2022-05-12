@@ -50,7 +50,7 @@ export let updateNewPostText = (newText) => {
 }
 
 export const subscribe = (observer) => {
-    rerenderEntireTree = observer;   //observer паттерн and bla bla bvla
+    rerenderEntireTree = observer;   //observer паттерн
 }
 
 export default state;
