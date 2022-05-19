@@ -4,20 +4,18 @@ import React from "react";
 
 
 const MyPosts = (props) => {
-
+    let postElements = props.posts.map(p => <MyPost key={p.id} message={p.message} likesCount={p.likesCount}/>)
     let newPostElement = React.createRef();
-
-    let addPost = () => {
-        props.addPost();
+    let onAddPost = () => {
+    props.addPost()
     }
-    // let on = React.createRef();
 
     let onPostChange = () => {
         let text = newPostElement.current.value;
+        //используем actionCreator
         props.updateNewPostText(text)
     }
 
-    let postElements = props.posts.map(p => <MyPost message={p.message} likesCount={p.likesCount}/>)
 
     return (
         <div className={s.content}>
@@ -29,7 +27,7 @@ const MyPosts = (props) => {
                                   cols="50" rows="1"></textarea>
                     </div>
                     <div>
-                        <button onClick={addPost}>Add Post</button>
+                        <button onClick={onAddPost}>Add Post</button>
                     </div>
                 </div>
             </div>
